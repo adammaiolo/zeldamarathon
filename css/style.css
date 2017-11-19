@@ -1,0 +1,558 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+
+body {
+  margin: 0;
+
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: green;
+}
+
+a {
+  font-size: 40px;
+  margin: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-family: oswald;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.prizes a {
+  margin: 0;
+  padding: 0;
+}
+
+.info {
+  font-family: oswald;
+  font-size: 20px;
+}
+
+.bid {
+  display: none;
+}
+
+.text-muted {
+  display: none;
+}
+
+#footer {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background: green;
+  text-align: center;
+}
+
+#footer p {
+  padding-top: 14px;
+  margin: 0;
+}
+
+#social a {
+  font-size: 40px;
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 20px;
+  top: -8px;
+  opacity: 0.7;
+}
+
+#facebook {
+  position: absolute;
+  left: 50px;
+  top: 14px;
+  opacity: 0.9;
+}
+
+#social a:hover {
+  background: none;
+  color: white;
+}
+
+a:hover {
+  color: green;
+  transition: color 0.5s ease-out;
+}
+
+i {
+  margin-right: 10px;
+}
+
+#profile img {
+  border-radius: 50%;
+}
+
+#profile .row {
+  margin-bottom: 80px;
+}
+
+#profile h1 {
+  position: absolute;
+  left: 120px;
+}
+
+h1 {
+  font-family: oswald;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  flex-basis: 1200px;
+  padding-top: 20px;
+}
+
+article {
+  flex: 1 1 50%;
+  background-image: url("../img/prize1.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  top: 0
+  bottom 0;
+  height: 350px;
+ /* z-index: -1;*/
+}
+
+#article-overlay {
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  bottom: 0;
+  height: 350px;
+  width: 100%;
+  border: 3px solid green;
+ /* z-index: -5;*/
+}
+
+article p {
+  color: white;
+  font-family: oswald;
+  font-weight: 300;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+article a {
+  font-family: oswald;
+}
+
+ a:hover {
+  background: white;
+}
+
+aside {
+  flex: 1 1 50%;
+  order: -1;
+  background-image: url("../img/shirts.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  top: 0
+  bottom 0;
+  height: 350px;
+ /* z-index: -1;*/
+}
+
+#aside-overlay {
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  bottom: 0;
+  height: 350px;
+  width: 100%;
+  border: 3px solid green;
+/*  z-index: -5;*/
+}
+
+aside p {
+  color: white;
+  font-family: oswald;
+  font-weight: 300;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+aside a {
+  font-family: oswald;
+}
+
+main h1 {
+  color: white;
+  font-family: oswald;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  font-size: 40px;
+}
+
+
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+#social {
+  background: none;
+  height: 50px;
+}
+
+
+
+
+
+#hero {
+  background-image: url("../img/climbing.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  top: 0
+  bottom 0;
+  height: 450px;
+ /* z-index: -10;*/
+}
+
+#hero-overlay {
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  bottom: 0;
+  height: 450px;
+  width: 100%;
+  /*z-index: -5;*/
+}
+
+#intro {
+  background-image: url("../img/intro.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  top: 0
+  bottom 0;
+  height: 230px;
+  z-index: -10;
+}
+
+#intro-overlay {
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  bottom: 0;
+  height: 230px;
+  width: 100%;
+  z-index: -5;
+}
+
+#intro-text h1 {
+  color: white;
+  font-family: oswald;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  font-size: 40px;
+}
+
+#intro-text p {
+  color: white;
+  font-family: oswald;
+  font-weight: 300;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+#logo img {
+  width: 800px;
+  display: block;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+#logo h1 {
+  color: white;
+  font-family: oswald;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 40px;
+  margin-right: 25px;
+}
+
+#mobile img {
+  display: none;
+}
+
+#mobile h1 {
+  display: none;
+}
+
+#chat iframe {
+  height: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+.about {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.shirtwrap {
+  padding: 15px;
+}
+
+#chat iframe{
+  width:100%;
+  height:100%;
+}
+
+@media all and (max-width: 1251px) {
+
+  #intro {
+    height: 370px;
+  }
+
+
+  #intro-overlay {
+  height: 370px;
+  
+}
+
+}
+
+
+@media all and (max-width: 991px) {
+  nav {
+    justify-content: center;
+  }
+  a {
+    font-size: 26px;
+  }
+
+#profile img {
+  display: block;
+  margin: 0 auto;
+}
+
+#profile h1 {
+  text-align: center;
+  position: absolute;
+  right: 120px;
+}
+
+#profile .row div {
+  margin-bottom: 80px;
+}
+
+#profile .row {
+  margin-bottom: 0;
+}
+
+#intro-text h1 {
+  font-size: 30px;
+}
+
+#logo h1 {
+  color: white;
+  font-family: oswald;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+#logo img {
+  width: 100%;
+  padding: 20px;
+}
+
+#hero {
+  height: 500px;
+}
+
+#hero-overlay {
+  height: 500px;
+}
+
+main {
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+#video {
+  display: none;
+}
+
+.mobile {
+  display: block;
+  margin: 0;
+}
+
+#collapse {
+  display: none;
+}
+
+#chat {
+  width: 100%;
+}
+
+#chat iframe{
+  width:100%;
+  height:400px;
+}
+
+#intro p {
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+}
+
+
+@media all and (max-width: 600px) {
+
+
+  
+  nav {
+    flex-direction: column;
+    align-items: center;
+    background: green;
+}
+  a {
+    color: white;
+  }
+
+   #hero {
+    display: none;
+  }
+
+  #intro {
+    height: 400px;
+  }
+
+
+  #intro-overlay {
+ 
+  height: 400px;
+
+}
+
+#mobile {
+  width: 100%;
+  height: 170px;
+  background-color: black;
+}
+
+#mobile img {
+  width: 250px;
+  display: block;
+  margin: auto;
+  padding-top: 15px;
+}
+
+#mobile h1 {
+  display: block;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+
+  article p {
+    font-size: 17px;
+  }
+
+  aside p {
+    font-size: 17px;
+  }
+
+
+}
+
+@media all and (max-width: 460px) {
+   #intro {
+    height: 450px;
+  }
+
+
+  #intro-overlay {
+  height: 450px;
+  
+}
+}
+
+@media all and (max-width: 404px) {
+   #intro {
+    height: 500px;
+  }
+
+
+  #intro-overlay {
+  height: 500px;
+  
+}
+}
+
+@media all and (max-width: 373px) {
+   #intro {
+    height: 570px;
+  }
+
+
+  #intro-overlay {
+  height: 570px;
+  
+}
+}
+
+
+@media all and (max-width: 348px) {
+   #intro {
+    height: 620px;
+  }
+
+
+  #intro-overlay {
+  height: 620px;
+  
+}
+}
+
+
